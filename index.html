@@ -2459,19 +2459,20 @@
 
 
 <style>
-  /* Cubre el banner de Wix */
-  .tapa-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
+  /* Ajuste del iframe para comer la cabecera */
+  .iframe-sin-cabecera {
+    position: relative;
+    top: -55px; /* este es el que buscabas */
     width: 100%;
-    height: 50px; /* ajusta según la altura del banner */
-    background: white; /* o el color de tu cabecera */
-    z-index: 9999;
+    height: calc(100% + 55px);
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
   }
 </style>
 
-<div class="tapa-banner"></div>
+
 
 
 
