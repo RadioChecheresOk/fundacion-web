@@ -1,0 +1,73 @@
+Llegué hasta allí, y no sé como seguir para meter esto
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Web - Embebido Wix</title>
+  <style>
+    /* Elimina márgenes del body */
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+
+    /* Elimina márgenes del widget */
+    #footer-sec793, #HTML50 {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    /* Contenedor principal ajustado */
+    .iframe-sin-cabecera-container {
+      width: 100%;
+      overflow: hidden !important;
+      height: 3700px;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none;
+      line-height: 0; /* Elimina espacio fantasma */
+    }
+    
+    /* Iframe ajustado */
+    .iframe-sin-cabecera {
+      position: relative;
+      top: -55px;
+      width: 100%;
+      height: calc(100% + 55px);
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    /* Versión móvil */
+    @media (max-width: 768px) {
+      .iframe-sin-cabecera-container {
+        height: 1900px;
+      }
+      .iframe-sin-cabecera {
+        transform: scale(1.23);
+        transform-origin: top left;
+        width: 81.3%;
+        top: -55px;
+        height: calc(100% + 75px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-sin-cabecera-container">
+    <iframe 
+      src="https://joasmiol.wixstudio.com/joasfrch" 
+      class="iframe-sin-cabecera"
+      sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+      scrolling="no"
+      frameborder="0"
+    ></iframe>
+  </div>
+</body>
+</html>
